@@ -2,11 +2,11 @@ import React from 'react';
 import { Link, Route, Router, useLocation } from 'wouter';
 import { Container, Tabs, Tab } from '@mui/material';
 
-import JamesPage from './pages/JamesPage';
-import VisitingInfoPage from './pages/VisitingInfoPage';
-import HouseholdStuffPage from './pages/HouseholdStuffPage';
-import GalleryPage from './pages/GalleryPage';
-
+import neoClan from './pages/neoClan';
+import Download from './pages/Download';
+import Features from './pages/Features';
+import Contribute from './pages/Contribute';
+import './App.css';
 
 function App() {
     const [location, setLocation] = useLocation();
@@ -17,22 +17,30 @@ function App() {
 
     return (
         <div className="App">
-            <Container maxWidth="sm">
+            <Container maxWidth="md">
                 <header>
                     <Tabs value={location} onChange={handleTabChange}>
-                        <Tab label="James" value="/" component={Link} to="/" />
-                        <Tab label="Visiting Info" value="/visiting-info" component={Link} to="/visiting-info" />
-                        <Tab label="Household Stuff" value="/household-stuff" component={Link} to="/household-stuff" />
-                        <Tab label="Photos" value="/photos" component={Link} to="/photos" />
+                        <Tab label="neoClan" value="/" component={Link} to="/" />
+                        <Tab label="Features" value="/features" component={Link} to="/features" />
+                        <Tab label="Download" value="/download" component={Link} to="/download" />
+                        <Tab label="Contribute" value="/contribute" component={Link} to="/contribute" />
                     </Tabs>
                 </header>
                 <Router>
-                    <Route path="/" component={JamesPage} />
-                    <Route path="/visiting-info" component={VisitingInfoPage} />
-                    <Route path="/household-stuff" component={HouseholdStuffPage} />
-                    <Route path="/photos" component={GalleryPage} />
-
+                    <Route path="/" component={neoClan} />
+                    <Route path="/features" component={Features} />
+                    <Route path="/download" component={Download} />
+                    <Route path="/contribute" component={Contribute} />
                 </Router>
+                <footer>
+                    <ul>
+                        <li><Link href="https://github.com/tdobson/neoClan">GitHub</Link></li>
+                        <li><Link href="mailto:neoclan@climbingclan.com">Contact</Link></li>
+                        <li><Link href="/download">Download</Link></li>
+                        <li><Link href="https://climbingclan.atlassian.net/jira/core/projects/COM/board">Report an issue on JIRA</Link></li>
+                    </ul>
+                </footer>
+
             </Container>
         </div>
     );
