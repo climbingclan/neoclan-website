@@ -6,10 +6,10 @@ function Contribute() {
             <h1 className="primary">Contribute to neoClan</h1>
             <section>
                 <h2 className="primary">Why Contribute?</h2>
-                <p>neoClan started as a solution for The Climbing Clan and has grown thanks to community contributions. Be a part of this exciting journey!</p>
+                <p>neoClan started as a solution for The Climbing Clan and has grown thanks to community contributions. </p>
 
                 <h2 className="primary">Code Contribution</h2>
-                <p>Help us improve! We need frontend expertise and documentation writers. When making pull requests, please ensure they're structured well: a clear title, a detailed description, and linked to the related issue on JIRA.</p>
+                <p>We need frontend expertise and documentation writers. When making pull requests, please ensure they're structured well: a clear title, a detailed description, and linked to the related issue on JIRA.</p>
                 <p>We welcome documentation bugs and fixes of all sizes.</p>
 
                 <h2 className="primary">Engage with Our Community</h2>
