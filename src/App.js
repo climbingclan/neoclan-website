@@ -18,16 +18,7 @@ function App() {
     return (
         <div className="App">
             <Container size="md">
-                <header>
-                    <Tabs value={location} onTabChange={handleTabChange}>
-                        <TabsList>
-                            <TabsTab label="neoClan" value="/" component={Link} to="/" />
-                            <TabsTab label="Features" value="/features" component={Link} to="/features" />
-                            <TabsTab label="Download" value="/download" component={Link} to="/download" />
-                            <TabsTab label="Contribute" value="/contribute" component={Link} to="/contribute" />
-                        </TabsList>
-                    </Tabs>
-                </header>
+                <Header />
                 <Router>
                     <Route path="/" component={neoClan} />
                     <Route path="/features" component={Features} />
