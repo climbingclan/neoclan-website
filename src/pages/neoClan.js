@@ -31,7 +31,7 @@ function neoClan() {
                     <Link className="big-button primary" href="/download">Download neoClan Now</Link>
                 </div>
             </section>
-        </Box>
+        </div>
 );
 }
 
