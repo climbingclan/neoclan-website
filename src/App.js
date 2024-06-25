@@ -27,7 +27,7 @@ function App() {
                             <TabsTab label="Contribute" value="/contribute" component={Link} to="/contribute" />
                         </TabsList>
                     </Tabs>
-                </Header>
+                </header>
                 <Router>
                     <Route path="/" component={neoClan} />
                     <Route path="/features" component={Features} />
