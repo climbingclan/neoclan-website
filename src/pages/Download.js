@@ -1,11 +1,9 @@
 import React from 'react';
 import { Box, Title, Text } from '@mantine/core';
-import Header from '../components/Header';
 
 function Download() {
     return (
         <Box>
-            <Header />
             <Title order={1} className="primary">Download neoClan</Title>
             <section>
                 <Title order={2} className="primary">Prerequisites</Title>

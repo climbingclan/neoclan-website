@@ -1,11 +1,9 @@
 import React from 'react';
 import { Box, Title, Text, Button, Anchor } from '@mantine/core';
-import Header from '../components/Header';
 
 function Contribute() {
     return (
         <Box>
-            <Header />
             <Title order={1} className="primary">Contribute to neoClan</Title>
             <section>
                 <Title order={2} className="primary">Why Contribute?</Title>

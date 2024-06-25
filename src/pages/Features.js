@@ -1,14 +1,10 @@
 import React from 'react';
 import { Box } from '@mantine/core';
-import Header from '../components/Header';
 
 function Features() {
     return (
         <Box>
-            <Header />
-            <header>
 
-            </header>
 
             <section id="overview">
                 <p>NeoClan is a modern attendance management and check-in system designed for real-time synchronization across mobile and desktop devices. Originally built for The Climbing Clan to replace the legacy "Matrix" Google Sheets system, it's now being eyed by other communities like The Caving Crew!</p>
