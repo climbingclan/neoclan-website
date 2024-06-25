@@ -15,12 +15,10 @@ function App() {
     const [activeTab, setActiveTab] = useState(location);
 
     const handleTabChange = (newTab) => {
-        console.log('handleTabChange called with newTab:', newTab);
         setActiveTab(newTab);
         setLocation(newTab);
     };
 
-    console.log('App component rendered with location:', location);
 
     return (
         <div className="App">
