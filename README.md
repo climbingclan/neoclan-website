@@ -42,6 +42,16 @@ The `Header` component is located in `src/components/Header.js`. It includes nav
 
 The `Footer` component is located in `src/components/Footer.js`. It typically contains links to important sections of the website, such as the home page, features, download, and contribute pages. The `Footer` component uses the `Group` component from Mantine to organize the links and provide spacing between them.
 
+## Components
+
+### Header
+
+The `Header` component is located in `src/components/Header.js`. It includes navigation tabs that allow users to switch between different sections of the application. The `Header` component uses the `Tabs` component from Mantine to manage the navigation state.
+
+### Footer
+
+The `Footer` component is located in `src/components/Footer.js`. It typically contains links to important sections of the website, such as the home page, features, download, and contribute pages. The `Footer` component uses the `Group` component from Mantine to organize the links and provide spacing between them.
+
 ## Installation
 
 To set up the project locally, follow these steps:
