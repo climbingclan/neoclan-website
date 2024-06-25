@@ -21,8 +21,8 @@ function Download() {
                 <h2 className="primary">Step 4: Build</h2>
                 <pre><code>npm run build</code></pre>
             </section>
-        </div>
-    );
+    </Box>
+);
 }
 
 export default Download;
