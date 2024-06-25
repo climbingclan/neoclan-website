@@ -32,7 +32,7 @@ function neoClan() {
                         component={Link}
                         to="/download"
                         variant="filled"
-                        color="primary"
+                        color="blue"
                         size="lg"
                         className="big-button"
                         style={{ transition: 'transform 0.2s' }}
