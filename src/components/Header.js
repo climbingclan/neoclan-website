@@ -3,6 +3,9 @@ import { Tabs, TabsList, TabsTab } from '@mantine/core';
 import { Link } from 'wouter';
 
 function Header({ location, handleTabChange }) {
+    console.log('Header component rendered');
+    console.log('Location:', location);
+    console.log('handleTabChange:', handleTabChange);
     return (
         <header>
             <Tabs value={location} onTabChange={handleTabChange}>
