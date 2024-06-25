@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { MantineProvider } from '@mantine/core';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -9,11 +10,13 @@ import {ComponentPreviews, useInitial} from "./dev";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <DevSupport ComponentPreviews={ComponentPreviews}
-                    useInitialHook={useInitial}
-        >
-            <App/>
-        </DevSupport>
+        <MantineProvider>
+            <DevSupport ComponentPreviews={ComponentPreviews}
+                        useInitialHook={useInitial}
+            >
+                <App/>
+            </DevSupport>
+        </MantineProvider>
     </React.StrictMode>
 );
 
