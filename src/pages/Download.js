@@ -7,7 +7,7 @@ function Download() {
             <Title order={1} className="primary">Download neoClan</Title>
             <section>
                 <Title order={2} className="primary">Prerequisites</Title>
-                <p>Before you begin, ensure you have Node.js installed on your system. A basic understanding of Node.js and npm will be beneficial.</p>
+                <Text>Before you begin, ensure you have Node.js installed on your system. A basic understanding of Node.js and npm will be beneficial.</Text>
 
                 <h2 className="primary">Step 1: Clone from GitHub</h2>
                 <pre><code>git clone https://github.com/tdobson/neoClan.git</code></pre>

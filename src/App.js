@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Route, Router, useLocation } from 'wouter';
-import { Container, Tabs, Tab } from '@mui/material';
+import { Container } from '@mantine/core';
 
 import neoClan from './pages/neoClan';
 import Download from './pages/Download';
