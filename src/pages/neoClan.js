@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from '@mantine/core';
+import { Image, Button } from '@mantine/core';
 import { Link } from 'wouter';
 
 function neoClan() {
@@ -28,11 +28,23 @@ function neoClan() {
             </section>
             <section>
                 <div className="button-container">
-                    <Link className="big-button primary" href="/download">Download neoClan Now</Link>
+                    <Button
+                        component={Link}
+                        to="/download"
+                        variant="filled"
+                        color="primary"
+                        size="lg"
+                        className="big-button"
+                        style={{ transition: 'transform 0.2s' }}
+                        onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+                        onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
+                    >
+                        Download neoClan Now
+                    </Button>
                 </div>
             </section>
         </div>
-);
+    );
 }
 
 export default neoClan;
