@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Route, Router, useLocation } from 'wouter';
-import { Container, Tabs, Tab } from '@mantine/core';
+import { Container, Tabs, TabsList, TabsTab } from '@mantine/core';
 
 import neoClan from './pages/neoClan';
 import Download from './pages/Download';
@@ -19,13 +19,15 @@ function App() {
         <div className="App">
             <Container maxWidth="md">
                 <header>
-                    <Tabs value={location} onChange={handleTabChange}>
-                        <Tab label="neoClan" value="/" component={Link} to="/" />
-                        <Tab label="Features" value="/features" component={Link} to="/features" />
-                        <Tab label="Download" value="/download" component={Link} to="/download" />
-                        <Tab label="Contribute" value="/contribute" component={Link} to="/contribute" />
+                    <Tabs value={location} onTabChange={handleTabChange}>
+                        <TabsList>
+                            <TabsTab label="neoClan" value="/" component={Link} to="/" />
+                            <TabsTab label="Features" value="/features" component={Link} to="/features" />
+                            <TabsTab label="Download" value="/download" component={Link} to="/download" />
+                            <TabsTab label="Contribute" value="/contribute" component={Link} to="/contribute" />
+                        </TabsList>
                     </Tabs>
-                </header>
+                </Header>
                 <Router>
                     <Route path="/" component={neoClan} />
                     <Route path="/features" component={Features} />
