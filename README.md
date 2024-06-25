@@ -87,6 +87,16 @@ Launches the test runner in interactive watch mode. See the section about [runni
 
 Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
 
+## Testing
+
+The project uses Jest along with React Testing Library for testing. Tests are located in the `src/App.test.js` file. To run the tests, use the following command:
+
+```bash
+npm test
+```
+
+This will launch the test runner in interactive watch mode. For more information on how to write tests, refer to the [React Testing Library documentation](https://testing-library.com/docs/react-testing-library/intro/).
+
 ## Detailed Code Overview
 
 ### `src/App.js`
