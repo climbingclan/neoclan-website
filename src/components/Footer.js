@@ -2,7 +2,7 @@ import React from 'react';
 import { Group, Anchor } from '@mantine/core';
 import { Link } from 'wouter';
 
-function Footer() {
+function Footer({ location, handleTabChange }) {
     return (
         <footer>
             <Group spacing="xs">
