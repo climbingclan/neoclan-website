@@ -17,7 +17,7 @@ function App() {
 
     return (
         <div className="App">
-            <Container maxWidth="md">
+            <Container size="md">
                 <header>
                     <Tabs value={location} onTabChange={handleTabChange}>
                         <TabsList>
