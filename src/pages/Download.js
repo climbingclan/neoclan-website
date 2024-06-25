@@ -17,8 +17,8 @@ function Download() {
                 <h2 className="primary">Step 3: Run the App</h2>
                 <pre><code>npm start</code></pre>
 
-                <h2 className="primary">Step 4: Build</h2>
-                <pre><code>npm run build</code></pre>
+                <h2 className="primary">Step 4: Build</code></pre>
+            </section>
         </Box>
 );
 }
