@@ -9,7 +9,7 @@ function Download() {
                 <Title order={2} className="primary">Prerequisites</Title>
                 <Text>Before you begin, ensure you have Node.js installed on your system. A basic understanding of Node.js and npm will be beneficial.</Text>
 
-                <h2 className="primary">Step 1: Clone from GitHub</h2>
+                </Box>
                 <pre><code>git clone https://github.com/tdobson/neoClan.git</code></pre>
 
                 <h2 className="primary">Step 2: Install Dependencies</h2>
