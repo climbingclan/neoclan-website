@@ -1,18 +1,15 @@
 import React from 'react';
-import { Tabs, TabsList, TabsTab } from '@mantine/core';
-import { Link } from 'wouter';
+import { Group, Anchor } from '@mantine/core';
 
-function Footer({ location, handleTabChange }) {
+function Footer() {
     return (
         <footer>
-            <Tabs value={location} onTabChange={handleTabChange}>
-                <TabsList>
-                    <TabsTab label="GitHub" value="https://github.com/tdobson/neoClan" component={Link} href="https://github.com/tdobson/neoClan" />
-                    <TabsTab label="Contact" value="mailto:neoclan@climbingclan.com" component={Link} href="mailto:neoclan@climbingclan.com" />
-                    <TabsTab label="Download" value="/download" component={Link} href="/download" />
-                    <TabsTab label="Report an issue on JIRA" value="https://climbingclan.atlassian.net/jira/core/projects/COM/board" component={Link} href="https://climbingclan.atlassian.net/jira/core/projects/COM/board" />
-                </TabsList>
-            </Tabs>
+            <Group position="center" spacing="xl">
+                <Anchor href="https://github.com/tdobson/neoClan" target="_blank">GitHub</Anchor>
+                <Anchor href="mailto:neoclan@climbingclan.com" target="_blank">Contact</Anchor>
+                <Anchor href="/download">Download</Anchor>
+                <Anchor href="https://climbingclan.atlassian.net/jira/core/projects/COM/board" target="_blank">Report an issue on JIRA</Anchor>
+            </Group>
         </footer>
     );
 }
