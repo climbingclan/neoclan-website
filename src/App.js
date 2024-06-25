@@ -14,8 +14,11 @@ function App() {
     const [location, setLocation] = useLocation();
 
     const handleTabChange = (event, newTab) => {
+        console.log('handleTabChange called with newTab:', newTab);
         setLocation(newTab);
     };
+
+    console.log('App component rendered with location:', location);
 
     return (
         <div className="App">
