@@ -33,7 +33,7 @@ function Features() {
                     "I love being able to check people in at Climbing Clan using my phone" - <cite>Matt</cite>
                 </blockquote>
             </section>
-    </Box>
+        </Box>
 );
 }
 
