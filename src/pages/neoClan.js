@@ -1,17 +1,17 @@
 import React from 'react';
-import { Header, Image } from '@mantine/core';
+import { Image } from '@mantine/core';
 import { Link } from 'wouter';
 
 function neoClan() {
     return (
         <div>
-            <Header className="App-header">
+            <header className="App-header">
                 <Image src="/logo.png" alt="Hero Image"/>
 
                 <h1 className="primary">Your event check-in app</h1>
 
                 <p>If you're keen to leave Google Sheets behind and move to a mobile-first check-in app, neoClan offers a user-friendly web interface to get your members checked in.</p>
-            </Header>
+            </header>
             <section>
                 <h2 className="primary">Features</h2>
                 <ul>
