@@ -1,11 +1,12 @@
 import React from 'react';
+import { Header, Image } from '@mantine/core';
 import { Link } from 'wouter';
 
 function neoClan() {
     return (
         <div>
-            <header className="App-header">
-                <img src="/logo.png" alt="Hero Image"/>
+            <Header className="App-header">
+                <Image src="/logo.png" alt="Hero Image"/>
 
                 <h1 className="primary">Your event check-in app</h1>
 
