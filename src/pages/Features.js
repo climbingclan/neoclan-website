@@ -9,10 +9,10 @@ function Features() {
             </header>
 
             <section id="overview">
-                </Box>
                 <p>NeoClan is a modern attendance management and check-in system designed for real-time synchronization across mobile and desktop devices. Originally built for The Climbing Clan to replace the legacy "Matrix" Google Sheets system, it's now being eyed by other communities like The Caving Crew!</p>
             </section>
 
+            </section>
             <section id="mobile-advantage">
                 <h2 className="primary">Mobile Advantage</h2>
                 <p>The true power of neoClan lies in its mobile support. Checking members in on-the-go becomes seamless, addressing a major pain point from legacy systems.</p>
