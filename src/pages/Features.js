@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Space, Title} from '@mantine/core';
+import {Box, Title} from '@mantine/core';
 
 function Features() {
     return (

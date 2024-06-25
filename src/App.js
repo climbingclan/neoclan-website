@@ -23,8 +23,6 @@ function App() {
         setActiveTab(location);
     }, [location]);
 
-
-
     return (
         <div className="App">
             <Container size="md">

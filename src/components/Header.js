@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Tabs, Container } from '@mantine/core';
 import { Link } from 'wouter';
 
