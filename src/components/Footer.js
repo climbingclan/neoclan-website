@@ -1,24 +1,26 @@
 import React from 'react';
-import { Tabs, TabsList, TabsTab } from '@mantine/core';
+import {Tabs, Container, Anchor} from '@mantine/core';
 import { Link } from 'wouter';
 
-function Footer({ location, handleTabChange }) {
-    console.log('Footer component rendered');
-    console.log('Location:', location);
-    console.log('handleTabChange:', handleTabChange);
+function Header({ location, handleTabChange }) {
     return (
-        <header>
+        <Container>
             <Tabs value={location} onTabChange={handleTabChange}>
-                <TabsList>
-                    <TabsTab label="neoClan" value="/" component={Link} to="/" />
-                    <TabsTab label="Features" value="/features" component={Link} to="/features" />
-                    <TabsTab label="Download" value="/download" component={Link} to="/download" />
-                    <TabsTab label="Contribute" value="/contribute" component={Link} to="/contribute" />
-                </TabsList>
+                <Tabs.List>
+                    <Tabs.Tab value="/" component={Link} to="/">neoClan</Tabs.Tab>
+                    <Tabs.Tab value="/features" component={Link} to="/features">Features</Tabs.Tab>
+                    <Tabs.Tab value="/download" component={Link} to="/download">Download</Tabs.Tab>
+                    <Tabs.Tab value="/contribute" component={Link} to="/contribute">Contribute</Tabs.Tab>
+                </Tabs.List>
             </Tabs>
-        </header>
+
+
+            <Anchor href="https://github.com/tdobson/neoClan" target="_blank">GitHub</Anchor>
+            <Anchor href="mailto:neoclan@climbingclan.com" target="_blank">Contact</Anchor>
+            <Anchor href="https://climbingclan.atlassian.net/jira/core/projects/COM/board" target="_blank">Report an issue on JIRA</Anchor>
+        </Container>
     );
 }
 
+export default Header;
 
-export default Footer;
