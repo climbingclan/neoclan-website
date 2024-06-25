@@ -19,6 +19,11 @@ function App() {
         setLocation(newTab);
     };
 
+    // Ensure activeTab is updated when location changes
+    useEffect(() => {
+        setActiveTab(location);
+    }, [location]);
+
 
     return (
         <div className="App">
