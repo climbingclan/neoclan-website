@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Router, useLocation } from 'wouter';
 import { Container } from '@mantine/core';
 
@@ -12,9 +12,11 @@ import './App.css';
 
 function App() {
     const [location, setLocation] = useLocation();
+    const [activeTab, setActiveTab] = useState(location);
 
-    const handleTabChange = (event, newTab) => {
+    const handleTabChange = (newTab) => {
         console.log('handleTabChange called with newTab:', newTab);
+        setActiveTab(newTab);
         setLocation(newTab);
     };
 
@@ -23,14 +25,14 @@ function App() {
     return (
         <div className="App">
             <Container size="md">
-                <Header location={location} handleTabChange={handleTabChange} />
+                <Header location={activeTab} handleTabChange={handleTabChange} />
                 <Router>
                     <Route path="/" component={neoClan} />
                     <Route path="/features" component={Features} />
                     <Route path="/download" component={Download} />
                     <Route path="/contribute" component={Contribute} />
                 </Router>
-                <Footer location={location} handleTabChange={handleTabChange} />
+                <Footer location={activeTab} handleTabChange={handleTabChange} />
             </Container>
         </div>
     );

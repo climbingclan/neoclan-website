@@ -1,18 +1,18 @@
 import React from 'react';
-import { Tabs, TabsList, TabsTab } from '@mantine/core';
+import { Tabs } from '@mantine/core';
 import { Link } from 'wouter';
 
 function Header({ location, handleTabChange }) {
     console.log('Header component rendered with props:', { location, handleTabChange });
     return (
         <header>
-            <Tabs value={location} onTabChange={handleTabChange}>
-                <TabsList>
-                    <TabsTab label="neoClan" value="/" component={Link} to="/" />
-                    <TabsTab label="Features" value="/features" component={Link} to="/features" />
-                    <TabsTab label="Download" value="/download" component={Link} to="/download" />
-                    <TabsTab label="Contribute" value="/contribute" component={Link} to="/contribute" />
-                </TabsList>
+            <Tabs value={location} onChange={handleTabChange}>
+                <Tabs.List>
+                    <Tabs.Tab value="/" component={Link} to="/">neoClan</Tabs.Tab>
+                    <Tabs.Tab value="/features" component={Link} to="/features">Features</Tabs.Tab>
+                    <Tabs.Tab value="/download" component={Link} to="/download">Download</Tabs.Tab>
+                    <Tabs.Tab value="/contribute" component={Link} to="/contribute">Contribute</Tabs.Tab>
+                </Tabs.List>
             </Tabs>
         </header>
     );
