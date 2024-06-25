@@ -1,17 +1,24 @@
 import React from 'react';
-import { Group, Anchor } from '@mantine/core';
+import { Tabs, TabsList, TabsTab } from '@mantine/core';
+import { Link } from 'wouter';
 
-function Footer() {
+function Footer({ location, handleTabChange }) {
+    console.log('Footer component rendered');
+    console.log('Location:', location);
+    console.log('handleTabChange:', handleTabChange);
     return (
-        <footer>
-            <Group position="center" spacing="xl" style={{ marginBottom: '20px' }}>
-                <Anchor href="https://github.com/tdobson/neoClan" target="_blank">GitHub</Anchor>
-                <Anchor href="mailto:neoclan@climbingclan.com" target="_blank">Contact</Anchor>
-                <Anchor href="/download">Download</Anchor>
-                <Anchor href="https://climbingclan.atlassian.net/jira/core/projects/COM/board" target="_blank">Report an issue on JIRA</Anchor>
-            </Group>
-        </footer>
+        <header>
+            <Tabs value={location} onTabChange={handleTabChange}>
+                <TabsList>
+                    <TabsTab label="neoClan" value="/" component={Link} to="/" />
+                    <TabsTab label="Features" value="/features" component={Link} to="/features" />
+                    <TabsTab label="Download" value="/download" component={Link} to="/download" />
+                    <TabsTab label="Contribute" value="/contribute" component={Link} to="/contribute" />
+                </TabsList>
+            </Tabs>
+        </header>
     );
 }
+
 
 export default Footer;

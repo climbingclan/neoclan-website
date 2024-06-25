@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Route, Router, useLocation } from 'wouter';
+import { Route, Router, useLocation } from 'wouter';
 import { Container } from '@mantine/core';
 
 import Header from './components/Header';
