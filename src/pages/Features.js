@@ -1,9 +1,11 @@
 import React from 'react';
 import { Box } from '@mantine/core';
+import Header from '../components/Header';
 
 function Features() {
     return (
         <Box>
+            <Header />
             <header>
 
             </header>
