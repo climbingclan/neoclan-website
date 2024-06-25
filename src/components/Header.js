@@ -6,7 +6,7 @@ function Header({ location, handleTabChange }) {
     return (
         <Container>
             {/* onTabChange is expected to handle tab change events */}
-            <Tabs value={location} onTabChange={handleTabChange}>
+            <Tabs value={location} tabchange={handleTabChange}>
                 <Tabs.List>
                     <Tabs.Tab value="/" component={Link} to="/">neoClan</Tabs.Tab>
                     <Tabs.Tab value="/features" component={Link} to="/features">Features</Tabs.Tab>
