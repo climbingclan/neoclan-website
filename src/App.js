@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Route, Router, useLocation } from 'wouter';
-import { Container } from '@mantine/core';
+import { Container, Tabs, Tab } from '@mantine/core';
 
 import neoClan from './pages/neoClan';
 import Download from './pages/Download';
@@ -42,8 +42,8 @@ function App() {
                 </footer>
 
             </Container>
-        </div>
-    );
+    </Box>
+);
 }
 
 export default App;

@@ -11,7 +11,7 @@ function neoClan() {
                 <h1 className="primary">Your event check-in app</h1>
 
                 <p>If you're keen to leave Google Sheets behind and move to a mobile-first check-in app, neoClan offers a user-friendly web interface to get your members checked in.</p>
-            </header>
+            </Header>
             <section>
                 <h2 className="primary">Features</h2>
                 <ul>
@@ -31,8 +31,8 @@ function neoClan() {
                     <Link className="big-button primary" href="/download">Download neoClan Now</Link>
                 </div>
             </section>
-        </div>
-    );
+    </Box>
+);
 }
 
 export default neoClan;
