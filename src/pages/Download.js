@@ -1,11 +1,12 @@
 import React from 'react';
+import { Box, Title, Text } from '@mantine/core';
 
 function Download() {
     return (
-        <div>
-            <h1 className="primary">Download neoClan</h1>
+        <Box>
+            <Title order={1} className="primary">Download neoClan</Title>
             <section>
-                <h2 className="primary">Prerequisites</h2>
+                <Title order={2} className="primary">Prerequisites</Title>
                 <p>Before you begin, ensure you have Node.js installed on your system. A basic understanding of Node.js and npm will be beneficial.</p>
 
                 <h2 className="primary">Step 1: Clone from GitHub</h2>
