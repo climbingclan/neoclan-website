@@ -1,10 +1,11 @@
 import React from 'react';
-import { Box, Title, Text } from '@mantine/core';
+import {Box, Title, Text, Space} from '@mantine/core';
 
 function Download() {
     return (
         <Box>
             <Title order={1} className="primary">Download neoClan</Title>
+            <Space />
             <section>
                 <Title order={2} className="primary">Prerequisites</Title>
                 <Text>Before you begin, ensure you have Node.js installed on your system. A basic understanding of Node.js and npm will be beneficial.</Text>

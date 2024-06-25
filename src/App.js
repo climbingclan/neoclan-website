@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, Router, useLocation } from 'wouter';
 import { Container } from '@mantine/core';
 
@@ -22,9 +22,7 @@ function App() {
     useEffect(() => {
         setActiveTab(location);
     }, [location]);
-    useEffect(() => {
-        setActiveTab(location);
-    }, [location]);
+
 
 
     return (

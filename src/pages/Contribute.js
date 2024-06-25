@@ -1,10 +1,11 @@
 import React from 'react';
-import { Box, Title, Text, Button, Anchor } from '@mantine/core';
+import {Box, Title, Text, Button, Anchor, Space} from '@mantine/core';
 
 function Contribute() {
     return (
         <Box>
             <Title order={1} className="primary">Contribute to neoClan</Title>
+            <Space />
             <section>
                 <Title order={2} className="primary">Why Contribute?</Title>
                 <Text>neoClan started as a solution for The Climbing Clan and has grown thanks to community contributions. </Text>

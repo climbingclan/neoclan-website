@@ -1,9 +1,11 @@
 import React from 'react';
-import { Box } from '@mantine/core';
+import {Box, Space, Title} from '@mantine/core';
 
 function Features() {
     return (
         <Box>
+            <Title order={1} className="primary">neoClan Features</Title>
+
 
 
             <section id="overview">
