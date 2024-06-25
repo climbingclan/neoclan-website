@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link, Route, Router, useLocation } from 'wouter';
-import { Container, Tabs, TabsList, TabsTab } from '@mantine/core';
+import { Container } from '@mantine/core';
 
+import Header from './components/Header';
+import Footer from './components/Footer';
 import neoClan from './pages/neoClan';
 import Download from './pages/Download';
 import Features from './pages/Features';
@@ -18,22 +20,14 @@ function App() {
     return (
         <div className="App">
             <Container size="md">
-                <Header />
+                <Header location={location} handleTabChange={handleTabChange} />
                 <Router>
                     <Route path="/" component={neoClan} />
                     <Route path="/features" component={Features} />
                     <Route path="/download" component={Download} />
                     <Route path="/contribute" component={Contribute} />
                 </Router>
-                <footer>
-                    <ul>
-                        <li><Link href="https://github.com/tdobson/neoClan">GitHub</Link></li>
-                        <li><Link href="mailto:neoclan@climbingclan.com">Contact</Link></li>
-                        <li><Link href="/download">Download</Link></li>
-                        <li><Link href="https://climbingclan.atlassian.net/jira/core/projects/COM/board">Report an issue on JIRA</Link></li>
-                    </ul>
-                </footer>
-
+                <Footer location={location} handleTabChange={handleTabChange} />
             </Container>
         </div>
     );

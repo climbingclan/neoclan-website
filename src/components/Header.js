@@ -1,11 +1,19 @@
 import React from 'react';
-import { Header as MantineHeader, Title } from '@mantine/core';
+import { Tabs, TabsList, TabsTab } from '@mantine/core';
+import { Link } from 'wouter';
 
-function Header() {
+function Header({ location, handleTabChange }) {
     return (
-        <MantineHeader height={60} p="xs">
-            <Title order={1}>neoClan</Title>
-        </MantineHeader>
+        <header>
+            <Tabs value={location} onTabChange={handleTabChange}>
+                <TabsList>
+                    <TabsTab label="neoClan" value="/" component={Link} to="/" />
+                    <TabsTab label="Features" value="/features" component={Link} to="/features" />
+                    <TabsTab label="Download" value="/download" component={Link} to="/download" />
+                    <TabsTab label="Contribute" value="/contribute" component={Link} to="/contribute" />
+                </TabsList>
+            </Tabs>
+        </header>
     );
 }
 
