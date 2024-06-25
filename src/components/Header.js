@@ -1,11 +1,12 @@
 import React from 'react';
 import { Tabs } from '@mantine/core';
 import { Link } from 'wouter';
+import './Header.css'; // Import the CSS file for Header styling
 
 function Header({ location, handleTabChange }) {
     console.log('Header component rendered with props:', { location, handleTabChange });
     return (
-        <header>
+        <header className="header">
             <Tabs value={location} onChange={handleTabChange}>
                 <Tabs.List>
                     <Tabs.Tab value="/" component={Link} to="/">neoClan</Tabs.Tab>
