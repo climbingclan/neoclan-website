@@ -11,6 +11,37 @@ The website is built using React, a popular JavaScript library for building user
 - `src/index.js`: The entry point of the application where the root component is rendered.
 - `public/`: Static files including images, icons, and the main HTML template.
 
+## Detailed Code Overview
+
+### `src/App.js`
+
+This file defines the main application component. It uses React Router for navigation and includes a container for the main content. The `App` component manages the current location state and handles tab changes.
+
+### `src/pages/`
+
+- **Contribute.js**: Provides information on how to contribute to the project.
+- **Download.js**: Guides users on how to download and install neoClan.
+- **Features.js**: Highlights the main features of neoClan.
+- **neoClan.js**: The main landing page with a header, hero image, and introductory text.
+
+### `src/index.js`
+
+This is the entry point of the application where the `App` component is rendered into the DOM.
+
+### `public/`
+
+Contains static assets such as images, icons, and the main HTML template (`index.html`).
+
+## Components
+
+### Header
+
+The `Header` component is located in `src/components/Header.js`. It includes navigation tabs that allow users to switch between different sections of the application. The `Header` component uses the `Tabs` component from Mantine to manage the navigation state.
+
+### Footer
+
+The `Footer` component is located in `src/components/Footer.js`. It typically contains links to important sections of the website, such as the home page, features, download, and contribute pages. The `Footer` component uses the `Group` component from Mantine to organize the links and provide spacing between them.
+
 ## Installation
 
 To set up the project locally, follow these steps:
